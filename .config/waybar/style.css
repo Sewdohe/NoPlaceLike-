@@ -1,0 +1,275 @@
+@import "../omarchy/current/theme/waybar.css";
+@import "theme-colors.css";
+
+* {
+  border: none;
+  font-family: "Rubik", "SpaceMono Nerd Font Mono";
+  font-size: 20px;
+  padding: 0px 0px;
+  margin: 0px;
+  min-height: 0px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+.modules-left {
+  background: transparent;
+}
+
+.modules-right {
+  background: transparent;
+}
+
+.modules-center {
+  /* background: @surface0; */
+  background: transparent;
+  /* padding: 10px 12px; */
+  border-radius: 28px;
+  /* box-shadow: 0 0px 8px rgba(0, 0, 0, 0.8); */
+}
+
+tooltip {
+  background: @crust;
+  border: 1px solid @overlay1;
+  border-radius: 12px;
+  margin: 4px 4px;
+}
+
+toltip label {
+  color: @text;
+  padding: 12px;
+}
+
+#workspaces {
+  background: @crust;
+  margin: 0 14px 0 14px;
+  border: none;
+  padding: 0px 16px;
+  border-radius: 28px;
+  box-shadow: 0px 0px 4px rgba(1, 1, 1, 0.3);
+}
+
+#workspaces button.empty {
+  color: @text;
+}
+
+/* workspaces with windows in them */
+#workspaces button {
+  color: @red;
+  border: none;
+  background: none;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.visible {
+  background: transparent;
+  color: @green;
+}
+#workspaces button.urgent {
+  background: @base;
+  color: @red;
+  text-decoration: underline;
+}
+
+#workspaces button:hover {
+  color: @green;
+  background: @overlay1;
+  padding: 0px 14px;
+  font-size: 22px;
+  transition: all 0.1s ease-in-out;
+}
+
+#workspaces button.active {
+  background: @base;
+  color: @green;
+  padding: 0px 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#tray {
+  margin-right: 16px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#bluetooth {
+  margin-right: 17px;
+  color: @blue;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#network {
+  margin-right: 13px;
+  color: @peach;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#modules-left {
+  background: @crust;
+  margin-left: 0px;
+  margin-right: 14px;
+  border-radius: 28px;
+  padding: 0 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#clock {
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+#clock:hover {
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-record {
+  padding: 0px 8px;
+  color: @red;
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-record:hover {
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-idle {
+  padding: 0px 8px;
+  padding-left: 10px;
+  color: @pink;
+  font-size: 28px;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-idle:hover {
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+  color: @purple;
+}
+
+#custom-screensaver {
+  padding: 0px 8px;
+  color: @blue;
+  font-size: 28px;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-screensaver:hover {
+  font-size: 30px;
+  color: @teal;
+  transition: all 0.3s ease-in-out;
+}
+
+#battery {
+  color: @green;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#cpu {
+  color: @red;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#pulseaudio {
+  color: @yellow;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#right-modules {
+  background: @crust;
+  border-radius: 28px;
+  padding: 0 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#tray-expander {
+  background: transparent;
+  padding: 0px 10px;
+  margin-right: 8px;
+  border-radius: 28px;
+  font-size: 24px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  font-size: 10px;
+  padding-bottom: 1px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: @red;
+}
+
+#tasks {
+  background: @crust;
+  border-radius: 28px;
+  padding: 10px 8px;
+  margin-left: 18px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#custom-tasks-today {
+  padding: 0px 8px;
+  color: @blue;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-tasks-overdue {
+  padding: 0px 8px;
+  color: @red;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-tasks-total {
+  padding: 0px 8px;
+  color: @pink;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-tasks-done {
+  padding: 0px 8px;
+  color: @green;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: @red;
+}
