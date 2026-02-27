@@ -1,0 +1,14 @@
+#!/bin/bash
+# ~/.local/bin/theme-toggle
+
+# Get the exact name from the Omarchy utility
+CURRENT=$(omarchy-theme-current)
+
+if [ "$CURRENT" == "Catppuccin Latte" ]; then
+  # If currently light, switch to dark
+  # Note: Use the exact command you use to set themes (e.g., 'omarchy theme')
+  omarchy-theme-set catppuccin
+else
+  # If currently mocha (or anything else), switch to latte
+  omarchy-theme-set catppuccin-latte
+fi
