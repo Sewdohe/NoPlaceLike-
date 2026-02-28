@@ -5,6 +5,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Just source the Omarchy bash aliases, or copy them over
+source ~/.local/share/omarchy/default/bash/aliases
+
+path+=("$HOME/.local/bin")
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 

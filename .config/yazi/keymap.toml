@@ -8,3 +8,7 @@ desc = "Open $SHELL here"
 on  = "<C-n>"
 run = "shell -- dragon -x -i -T %h"
 desc = "Open dragon-drop interface"
+
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"

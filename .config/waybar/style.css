@@ -33,13 +33,12 @@ window#waybar {
 tooltip {
   background: @crust;
   border: 1px solid @overlay1;
-  border-radius: 12px;
-  margin: 4px 4px;
+  border-radius: 24px;
 }
 
 toltip label {
   color: @text;
-  padding: 12px;
+  padding: 24px;
 }
 
 #workspaces {
@@ -184,6 +183,24 @@ toltip label {
   font-size: 30px;
   color: @teal;
   transition: all 0.3s ease-in-out;
+}
+
+#custom-syncthing {
+  padding: 0px 8px;
+  color: @text;
+  font-size: 32px;
+}
+
+#custom-syncthing.running {
+  padding: 0px 14px;
+  color: @green; /* green */
+  font-size: inherit;
+}
+
+#custom-syncthing.stopped {
+  padding: 0px 8px;
+  color: @red; /* red */
+  font-size: inherit;
 }
 
 #battery {
