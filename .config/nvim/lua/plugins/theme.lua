@@ -1,0 +1,1 @@
+/home/sewdohe/.config/omarchy/current/theme/neovim.lua
